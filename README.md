@@ -37,7 +37,7 @@ What we will simulate the load in the nutshell is as follow :
   3. Immitate high load with 20 pods (1 CPU, 128MB memory each) across multiple nodes.
 ```
 
-## FIRST CASE: INITIALLY CREATE A NODE WITH 3 Nodes
+## FIRST CASE: INITIALLY CREATE A CLUSTER WITH 3 NODES
 
 By the end of this exercise we will see 3 nodes was created following above command.
 ![](/images/14-image11.png)
