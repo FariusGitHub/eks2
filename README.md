@@ -69,8 +69,9 @@ $ cat cluster.yaml
 
 $ eksctl create cluster -f cluster.yaml
 ```
-EKS cluster normally takes 10-15 minutes to create. If we did some mistake, it would need 10-15 minutes to delete it and need to spend another 10-15 minutes to re-create it. <br>
-Below is the cloudformation which would be create by default.<br>
+EKS cluster normally takes 10-15 minutes to create. <br>
+If we did some mistake, it would need 10-15 minutes to delete it and need to spend another 10-15 minutes to re-create it. <br>
+Below is the cloudformation which would be created by default.<br>
 ![](/images/14-image02.png)
 
 The Name of EKS cluster created would be the same as from eksctl command above. Unlike cloudformation stack name which were added by some sorts of prefix and suffix.<br>
