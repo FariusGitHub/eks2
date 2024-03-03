@@ -30,7 +30,12 @@ eksctl create cluster \
 
 We may need to install [eksctl](https://eksctl.io/installation/) in the first place to run above command.
 
-## What we will simulate the load in the nutshell is as follow <br> 1. Initially create a kubernetes cluster says with a nodes with 3 pods <br> 2. Imitate low load by introducing unneeded pods to turn off after 3 minutes <br> 3. Immitate high load that requires 20 pods, each need 1 CPU & 128MB memory <br>
+```txt
+What we will simulate the load in the nutshell is as follow :
+  1. Initially create a kubernetes cluster says with a nodes with 3 pods 
+  2. Imitate low load by introducing unneeded pods to turn off after 3 minutes 
+  3. Immitate high load that requires 20 pods, each need 1 CPU & 128MB memory
+```
 
 ## FIRST CASE: INITIALLY CREATE A NODE WITH 3 PODS
 
