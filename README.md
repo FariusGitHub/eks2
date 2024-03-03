@@ -351,5 +351,5 @@ Number of instances needed for memory = Total memory required / memory per insta
 Since we cannot have a fraction of an instance, we need to round up to the nearest whole number. Therefore, we would need a total of 6 AWS m5.xlarge instances to meet the requirements for 20 pods.<br>
 
 # SUMMARY
-AWS EKS is a good tool to orchestrate kubernetes cluster on AWS platform. In this blog I bring three situations since the cluster was created, some measure taken to reduce cost and finally to simulate a spike of demand (let's say web traffic during holiday season) all with tweaking the hardware alone without installing the real app for the stress test.
+AWS EKS is a good tool to orchestrate kubernetes cluster on AWS platform. In this blog I bring three situations since the cluster was created, some measure taken to reduce cost and finally to simulate a spike of demand (let's say web traffic during holiday season) mainly with a web server software NGInx to serve web content and handle HTTP requests as a reverse proxy server, load balancer, and caching server rather than installing a web app itself for the stress test.
 ![](/images/14-image10.png)
