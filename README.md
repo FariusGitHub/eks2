@@ -32,12 +32,12 @@ We may need to install [eksctl](https://eksctl.io/installation/) in the first pl
 
 ```txt
 What we will simulate the load in the nutshell is as follow :
-  1. Initially create a kubernetes cluster says with a nodes with 3 pods 
-  2. Imitate low load by introducing unneeded pods to turn off after 3 minutes 
-  3. Immitate high load that requires 20 pods, each need 1 CPU & 128MB memory
+  1. Initially create a kubernetes cluster says with a nodes with 3 nodes.
+  2. Imitate low load by introducing unneeded Nodes to turn off after 3 minutes. 
+  3. Immitate high load with 20 pods (1 CPU, 128MB memory each) across multiple nodes.
 ```
 
-## FIRST CASE: INITIALLY CREATE A NODE WITH 3 PODS
+## FIRST CASE: INITIALLY CREATE A NODE WITH 3 Nodes
 
 By the end of this exercise we will see 3 nodes was created following above command.
 ![](/images/14-image11.png)
@@ -94,8 +94,8 @@ And we can see inside this group that those 3 nodes represented by 3 EC2 were cr
 To access these instances easily from our local machine, we may need to update current kubernetes context, than allow use to monitor the cluster with K3S for example locally.<br>
 ![](/images/14-image09.png)
 
-## SECOND CASE: TURNING OFF UNNEEDED PODS AFTER 3 MINUTES
-By the end of this exercise we will have 2 unnecessary pods deleted like below.
+## SECOND CASE: TURNING OFF UNNEEDED NODES AFTER 3 MINUTES
+By the end of this exercise we will have 2 unnecessary nodes deleted like below.
 ![](/images/14-image12.png)
 To do so we can download and run a yaml file below for example.<br>
 ```txt
