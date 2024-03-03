@@ -40,7 +40,7 @@ What we will simulate the load in the nutshell is as follow :
 ## FIRST CASE: INITIALLY CREATE A CLUSTER WITH 3 NODES
 
 By the end of this exercise we will see 3 nodes was created following above command.
-![](/images/14-image11.png)
+![](/images/14-image11.png)<br>
 We could also run the command through a yaml file like below
 ```sh
 $ cat cluster.yaml
