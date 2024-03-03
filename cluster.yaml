@@ -1,0 +1,22 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: EKS-Lab
+  region: us-east-1
+  version: "1.28"
+
+iam:
+  withOIDC: true
+
+managedNodeGroups:
+  - name: linux-nodes
+    instanceType: m5.xlarge
+    minSize: 1
+    maxSize: 10
+    desiredCapacity: 3
+    amiFamily: AmazonLinux2
+    ssh:
+      publicKeyPath: ~/.ssh/id_rsa.pub
+    iam:
+      withAddonPolicies:
+        autoScaler: true
